@@ -1,0 +1,14 @@
+#!/bin/sh
+
+LOCK='/home/eric/files/images/backgrounds/LOCKSCREEN.jpg'
+
+[ -f $LOCK ] && rm $LOCK
+
+sleep 0.2
+
+flameshot full -p $LOCK
+
+convert $LOCK -filter Gaussian -blur 0x8 $LOCK
+
+slock-img
+

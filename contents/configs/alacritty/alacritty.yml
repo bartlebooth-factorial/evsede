@@ -1,0 +1,119 @@
+font:
+  # normal:
+  #   family: Source Code Pro
+  #   style: Regular
+  # bold:
+  #   family: Source Code Pro
+  #   style: Bold
+  # italic:
+  #   family: Source Code Pro
+  #   style: Italic
+  # bold_italic:
+  #   family: Source Code Pro
+  #   style: Bold Italic
+  size: 18
+
+env:
+  TERM: xterm-256color
+
+window:
+  padding:
+    x: 20
+    y: 20
+  decorations: none
+  dynamic_title: true
+  opacity: 1.0
+
+scrolling:
+  multiplier: 3
+  history: 2000
+
+key_bindings:
+  - { key: J,   mods: Control,    action: ScrollPageDown }
+  - { key: K,   mods: Control,    action: ScrollPageUp   }
+
+
+selection:
+  save_to_clipboard: true
+
+# # Colors (Blood Moon)
+# colors:
+#   # Default colors
+#   primary:
+#     # background: '0x10100E'
+#     background: '0x10100E'
+#     foreground: '0xC6C6C4'
+
+#   # Normal colors
+#   normal:
+#     black:   '0x10100E'
+#     red:     '0xC40233'
+#     green:   '0x009F6B'
+#     yellow:  '0xFFD700'
+#     blue:    '0x0087BD'
+#     magenta: '0x9A4EAE'
+#     cyan:    '0x20B2AA'
+#     white:   '0xC6C6C4'
+
+#   # Bright colors
+#   bright:
+#     black:   '0x696969'
+#     red:     '0xFF2400'
+#     green:   '0x03C03C'
+#     yellow:  '0xFDFF00'
+#     blue:    '0x007FFF'
+#     magenta: '0xFF1493'
+#     cyan:    '0x00CCCC'
+#     white:   '0xFFFAFA'
+
+#   # Dim colors
+#   dim:
+#     black:   '0x696969'
+#     red:     '0xFF2400'
+#     green:   '0x03C03C'
+#     yellow:  '0xFDFF00'
+#     blue:    '0x007FFF'
+#     magenta: '0xFF1493'
+#     cyan:    '0x00CCCC'
+#     white:   '0xFFFAFA'
+
+# Colors
+
+colors:
+  # Default colors
+  primary:
+    foreground: '0xDDDDDD'
+    background: '0x000111'
+
+  # Normal colors
+  normal:
+    black:   '0x000000'
+    red:     '0xCC0403'
+    green:   '0x19CB00'
+    yellow:  '0xCECB00'
+    blue:    '0x0D73CC'
+    magenta: '0xCB1ED1'
+    cyan:    '0x0DCDCD'
+    white:   '0xDDDDDD'
+
+  # Bright colors
+  bright:
+    black:   '0x767676'
+    red:     '0xF2201F'
+    green:   '0x23FD00'
+    yellow:  '0xFFFD00'
+    blue:    '0x1A8FFF'
+    magenta: '0xFD28FF'
+    cyan:    '0x14FFFF'
+    white:   '0xFFFFFF'
+
+  # Dim colors
+  dim:
+    black:   '0x767676'
+    red:     '0xF2201F'
+    green:   '0x23FD00'
+    yellow:  '0xFFFD00'
+    blue:    '0x1A8FFF'
+    magenta: '0xFD28FF'
+    cyan:    '0x14FFFF'
+    white:   '0xFFFFFF'

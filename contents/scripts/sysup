@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# upgrade packages
+doas pacman -Syu
+
+# upgrade AUR packages
+yay -Syua
+
+# update gd index
+gd -u
+

@@ -1,0 +1,11 @@
+* Eric's Very Simple Efficient Desktop Environment (evsede)
+** Features:
++ dwm fully configured
++ a bunch of useful programs with configs
++ documentation at a keystroke
+** Install script:
+Written to be run directly after using archinstall with 'minimal' profile
+** Github:
++ https://github.com/bartlebooth-factorial/evsede
++ Includes install script evsede.sh and contents/
+

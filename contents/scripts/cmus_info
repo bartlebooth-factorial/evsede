@@ -1,0 +1,20 @@
+#!/bin/sh
+
+info="$(cmus-remote -Q)"
+
+if [ $? -ge 1 ]; then
+	sleep 1
+	exit
+fi
+
+echo "- - - Status"
+echo "$info" | sed '1q' | cut -d' ' -f2
+echo
+echo "- - - Current track"
+basename "$(echo "$info" | sed '2q' | sed '1d' | cut -d' ' -f2-)"
+echo
+echo "- - - Looping"
+echo "$info" | sed '/current/!d' | cut -d' ' -f3
+sleep 1.5
+exit
+

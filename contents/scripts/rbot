@@ -1,0 +1,3 @@
+#!/bin/sh
+
+[ $(printf "yes\nno" | dmenu -p 'reboot? ') = 'yes' ] && doas reboot || exit

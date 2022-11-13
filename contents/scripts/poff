@@ -1,0 +1,3 @@
+#!/bin/sh
+
+[ $(printf "yes\nno" | dmenu -p 'power off? ') = 'yes' ] && doas poweroff || exit

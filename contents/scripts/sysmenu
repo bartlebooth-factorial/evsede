@@ -1,0 +1,27 @@
+#!/bin/sh
+
+choice=$(printf "poweroff
+reboot
+suspend
+lock
+blurlock
+suslock
+susblurlock" | dmenu -p "System Actions: ")
+
+case $choice in
+	poweroff)
+		doas shutdown -P now;;
+	reboot)
+		doas shutdown -r now;;
+	suspend)
+		systemctl suspend;;
+	lock)
+		slock;;
+	blurlock)
+		/home/eric/scripts/system/slock_blurred_screenshot;;
+	suslock)
+		slock & systemctl suspend;;
+	susblurlock)
+		/home/eric/scripts/system/slock_blurred_screenshot & systemctl suspend;;
+esac
+

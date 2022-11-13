@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd ~/files/images/backgrounds || exit
+bg=$(ls * | dmenu -l 20 -p "Choose a background: ") || exit
+mode=$(printf "center\nfill\nmax\nscale\ntile" | dmenu -l 5 -p "Choose a mode: ") || exit
+feh --bg-"$mode" "$bg" || exit
